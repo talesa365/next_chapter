@@ -1,0 +1,44 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+h1 {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+}
+
+/* Photo Album Layout */
+.album {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.photo {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+}
+
+.photo img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.photo p {
+    margin: 0;
+    padding: 10px;
+    background-color: #eee;
+    font-size: 16px;
+}
