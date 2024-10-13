@@ -3,34 +3,54 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Memory Lane</title>
-    <!-- Link to the external stylesheet -->
+    <title>A Walk To Remember</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
     <header>
-        <h1>My Photo Album</h1>
+        <h1>A Walk To Remember</h1>
     </header>
 
     <section class="album">
-        <!-- Photo 1 -->
-        <div class="photo">
-            <img src="photo1.jpg" alt="Photo 1">
-            <p>Photo 1 Description</p>
+        <!-- Flip Card 1 -->
+        <div class="flip-card" onclick="toggleFlip(this)">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <img src="photo1.jpg" alt="Photo 1">
+                </div>
+                <div class="flip-card-back">
+                    <p>Photo 1 Description: This is an awesome photo of nature.</p>
+                </div>
+            </div>
         </div>
-        <!-- Photo 2 -->
-        <div class="photo">
-            <img src="photo2.jpg" alt="Photo 2">
-            <p>Photo 2 Description</p>
+
+        <!-- Flip Card 2 -->
+        <div class="flip-card" onclick="toggleFlip(this)">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <img src="photo2.jpg" alt="Photo 2">
+                </div>
+                <div class="flip-card-back">
+                    <p>Photo 2 Description: A memorable sunset.</p>
+                </div>
+            </div>
         </div>
-        <!-- Photo 3 -->
-        <div class="photo">
-            <img src="photo3.jpg" alt="Photo 3">
-            <p>Photo 3 Description</p>
+
+        <!-- Flip Card 3 -->
+        <div class="flip-card" onclick="toggleFlip(this)">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <img src="photo3.jpg" alt="Photo 3">
+                </div>
+                <div class="flip-card-back">
+                    <p>Photo 3 Description: A beautiful beach.</p>
+                </div>
+            </div>
         </div>
-        <!-- Add more photos as needed -->
     </section>
 
+    <!-- Link to external JS file -->
+    <script src="script.js"></script>
 </body>
 </html>
