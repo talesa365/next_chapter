@@ -4,53 +4,72 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>A Walk To Remember</title>
+
+    <!-- Bootstrap CSS CDN -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <header>
+    <header class="text-center my-4">
         <h1>A Walk To Remember</h1>
     </header>
 
-    <section class="album">
-        <!-- Flip Card 1 -->
-        <div class="flip-card" onclick="toggleFlip(this)">
-            <div class="flip-card-inner">
-                <div class="flip-card-front">
-                    <img src="photo1.jpg" alt="Photo 1">
-                </div>
-                <div class="flip-card-back">
-                    <p>Photo 1 Description: This is an awesome photo of nature.</p>
-                </div>
-            </div>
-        </div>
-
-        <!-- Flip Card 2 -->
-        <div class="flip-card" onclick="toggleFlip(this)">
-            <div class="flip-card-inner">
-                <div class="flip-card-front">
-                    <img src="photo2.jpg" alt="Photo 2">
-                </div>
-                <div class="flip-card-back">
-                    <p>Photo 2 Description: A memorable sunset.</p>
+    <!-- Responsive Album Section using Bootstrap -->
+    <section class="album container">
+        <div class="row justify-content-center">
+            <!-- Flip Card 1 -->
+            <div class="col-md-4 mb-4">
+                <div class="flip-card" onclick="toggleFlip(this)">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <img src="images/50.jpg" class="img-fluid" alt="Photo 1">
+                        </div>
+                        <div class="flip-card-back">
+                            <p>Photo 1 Description: A beautiful scene.</p>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </div>
 
-        <!-- Flip Card 3 -->
-        <div class="flip-card" onclick="toggleFlip(this)">
-            <div class="flip-card-inner">
-                <div class="flip-card-front">
-                    <img src="photo3.jpg" alt="Photo 3">
+            <!-- Flip Card 2 -->
+            <div class="col-md-4 mb-4">
+                <div class="flip-card" onclick="toggleFlip(this)">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <img src="images/IMG_E0158.JPG" class="img-fluid" alt="Photo 2">
+                        </div>
+                        <div class="flip-card-back">
+                            <p>Photo 2 Description: A memorable sunset.</p>
+                        </div>
+                    </div>
                 </div>
-                <div class="flip-card-back">
-                    <p>Photo 3 Description: A beautiful beach.</p>
+            </div>
+
+            <!-- Flip Card 3 -->
+            <div class="col-md-4 mb-4">
+                <div class="flip-card" onclick="toggleFlip(this)">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <img src="images/gov_greg_me.jpg" class="img-fluid" alt="Photo 3">
+                        </div>
+                        <div class="flip-card-back">
+                            <p>Photo 3 Description: Meeting Governor Greg.</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Link to external JS file -->
+    <!-- Bootstrap JS CDN -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <!-- Custom JS -->
     <script src="script.js"></script>
 </body>
 </html>
